@@ -538,6 +538,13 @@ Private Sub cmdExcluir_Click()
     cn.Execute sql
     MsgBox "Transação excluída com sucesso!"
     Call AtualizarGrid
+    
+    ' Limpar todos os campos de texto da transação
+    txtIdTransacao.Text = ""
+    txtNumero.Text = ""
+    txtValor.Text = ""
+    txtData.Text = ""
+    txtDescricao.Text = ""
 End Sub
 
 

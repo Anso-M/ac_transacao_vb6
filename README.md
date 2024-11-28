@@ -15,22 +15,24 @@ Este projeto em Visual Basic 6 (VB6) é uma aplicação de gerenciamento de tran
    ```
    É possível também fazer o download dos arquivos.
 <br><br/>
-3. Abra o projeto no Microsoft Visual Basic 6.0.
+2. Abra o projeto no Microsoft Visual Basic 6.0.
 <br><br/>
-4. Configure as referências necessárias:
+3. Configure as referências necessárias:
    - Adicione a biblioteca `Microsoft Excel 16.0 Object Library`.
    - Adicione a referência à biblioteca ADODB para manipulação do banco de dados.
 <br><br/>
-5. Rode os scripts SQL presentes nos arquivos do projeto.
+4. Rode os scripts SQL presentes nos arquivos do projeto.
 <br><br/>
-6. Certifique-se de que o banco de dados SQL Server esteja configurado corretamente conforme a string de conexão fornecida no código (`localhost\SQLEXPRESS`).
+5. Certifique-se de que o banco de dados SQL Server esteja configurado corretamente conforme a string de conexão fornecida no código (`localhost\SQLEXPRESS`).
+<br><br/>
+6. Certifique-se de que o banco de dados possua no mínimo 1 registro na tabela `clientes`, pois as transações só podem ser cadastradas se houver algum cliente com um número de cartão válido.
 
 ## Funcionalidades do Código VB6
 
 ### Botões e Suas Funcionalidades
 
 1. **Inserir**
-   - **Descrição**: Insere uma nova transação no banco de dados. Preencha os campos na parte superior da interface.
+   - **Descrição**: Insere uma nova transação no banco de dados. Preencha os campos na parte superior da interface e clique no botão 'Inserir'.
    - **Validações**:
      - Verifica se o número do cartão tem 16 dígitos e é numérico.
      - Verifica se a data está no formato brasileiro (dd/mm/yyyy).
@@ -65,6 +67,7 @@ Este projeto em Visual Basic 6 (VB6) é uma aplicação de gerenciamento de tran
 5. **Consultar**
    - **Descrição**: Consulta transações no banco de dados com base nos filtros fornecidos.
    - **Validações**:
+     - Verifica se o número do cartão é numérico.
      - Valida a data no formato brasileiro.
      - Verifica se o valor da transação é numérico.
    - **Filtros**:

@@ -714,6 +714,7 @@ Private Sub ExportarParaExcel()
 
 ErrorHandler:
     MsgBox "Erro ao exportar os dados para Excel. Verifique se a função de categoria está criada no banco de dados.", vbExclamation
+    Call AtualizarGrid
 End Sub
 
 

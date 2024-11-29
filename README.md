@@ -11,7 +11,7 @@ Este projeto em Visual Basic 6 (VB6) é uma aplicação de gerenciamento de tran
 ## Instalação
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/seu-usuario/nome-do-projeto.git
+   git clone https://github.com/Anso-M/ac_transacao_vb6.git
    ```
    É possível também fazer o download dos arquivos.
 <br><br/>

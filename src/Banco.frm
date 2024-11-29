@@ -569,7 +569,13 @@ Private Sub cmdConsultar_Click()
     
     ' Adiciona cláusula para numero_cartao, se fornecido
     If txtFiltroNumeroCartao.Text <> "" Then
-        sql = sql & " AND t.numero_cartao = '" & txtFiltroNumeroCartao.Text & "'"
+       ' Valida o valor numérico
+       If IsNumeric(txtFiltroNumeroCartao.Text) Then
+           sql = sql & " AND t.numero_cartao = '" & txtFiltroNumeroCartao.Text & "'"
+       Else
+           MsgBox "Por favor, insira um número de cartão válido.", vbExclamation
+           Exit Sub
+       End If
     End If
     
     ' Adiciona cláusula para data_transacao, se fornecido

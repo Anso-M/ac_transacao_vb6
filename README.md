@@ -27,6 +27,8 @@ Este projeto em Visual Basic 6 (VB6) é uma aplicação de gerenciamento de tran
 <br><br/>
 6. Certifique-se de que o banco de dados possua no mínimo 1 registro na tabela `clientes`, pois as transações só podem ser cadastradas se houver algum cliente com um número de cartão válido.
 
+![](assets/img/home.png)
+
 ## Funcionalidades do Código VB6
 
 ### Botões e Suas Funcionalidades
@@ -75,6 +77,10 @@ Este projeto em Visual Basic 6 (VB6) é uma aplicação de gerenciamento de tran
      - `data_transacao`
      - `valor_transacao`
 
+![](assets/img/filtrar_cartão.png)
+
+![](assets/img/data_invalida.png)
+
 6. **LimparFiltros**
    - **Descrição**: Limpa todos os campos de filtro e atualiza o DataGrid com todos os dados.
 
@@ -120,6 +126,3 @@ Este projeto em Visual Basic 6 (VB6) é uma aplicação de gerenciamento de tran
 - `src/Banco.vbp`: Arquivo de projeto VB6.
 - `src/Banco.frm`: Arquivo de formulário contendo o design e código do formulário.
 - `src/Banco.vbw`: Arquivo de espaço de trabalho VB6.
-
-## Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
